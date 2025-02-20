@@ -18,4 +18,10 @@ class bookStore:
             self.booksInventory[newBook.getIdBook()] = [newBook.getNamBook(), newBook.getCategBook()]
         else:
             raise TypeError("El objeto debe ser una instancia de la clase Books.book")
-    
+
+
+    def deleteBook(self, bookId):
+        if bookId in self.booksInventory:
+            del self.booksInventory[bookId]
+        else:
+            return "Libro no esta en el inventario."
