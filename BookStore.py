@@ -24,4 +24,4 @@ class bookStore:
         if bookId in self.booksInventory:
             del self.booksInventory[bookId]
         else:
-            return "Libro no esta en el inventario."
+            return f"Libro con el id: {bookId} no esta en el inventario."
